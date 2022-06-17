@@ -4,7 +4,7 @@ let tools = document.querySelector(".tools");
 
 async function Get_Data() {
     try {
-        let FileData = await fetch("/js/data.json");
+        let FileData = await fetch("js/data.json");
         let DataJson = await FileData.json();
         return DataJson
     } catch {
